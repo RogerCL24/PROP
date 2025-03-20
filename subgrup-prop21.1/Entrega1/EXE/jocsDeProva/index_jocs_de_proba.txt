@@ -1,0 +1,98 @@
+jocs de proba
+· joc1.txt (Casos d'us de les llistes de productes)
+Casos d'us comprobats:
+- CAS 20: Registrar usuari
+- CAS 2: Afegir llista de productes(terminal)
+- CAS 3: Gestio llistes de productes
+- CAS 5: Visualitzar llista de productes
+- CAS 4: Modificar llista de productes
+- CAS 8: Afegir productes a una llista
+- CAS 9: Eliminar productes d'una llista
+- CAS 10: Gestio grau de similitud 
+- CAS 7: Canviar nom llista de productes
+- CAS 6: Esborrar llista de productes
+- CAS 1: Tancar simulador
+
+· joc2.txt (Casos d'us de les distribucions)
+Casos d'us comprobats:
+- CAS 20: Registrar usuari
+- CAS 2: Afegir llista de productes(fitxer)
+- CAS 11: Generar nova distribucio
+- CAS 12: Gestio de distribucions
+- CAS 13: Visualitzar distribucio
+- CAS 15: Modificar distribucio
+- CAS 16: Moure productes de la distribucio
+- CAS 17: Eliminar productes de la distribucio
+- CAS 18: Canviar nom de la distribucio
+- CAS 14: Esborrar distribucio
+- CAS 1: Tancar simulador
+
+· joc3.txt (Casos d'us )
+Casos d'us comprobats:
+- CAS 20: Registrar usuari
+- CAS 2: Afegir llista de productes(fitxer)
+- CAS 11: Generar nova distribucio
+- CAS 19: Exportar distribucio
+- CAS 22: Abandonar la sessio
+- CAS 23: Gestionar missatges
+- CAS 24: Enviar missatges (Llista de productes)
+- CAS 21: Inici de sessio
+- CAS 25: Seleccionar missatges
+- CAS 26: Guardar missatges 
+- CAS 24: Enviar missatges (Distribucio)
+
+
+### Analisi de l'Input
+
+A partir de l'input proporcionat, sembla que esta dissenyat per provar un sistema que:
+1. Registra usuaris i productes.
+2. Gestiona llistes de productes (creacio, addicio i connexio entre ells).
+3. Realitza operacions en llistes i productes, possiblement relacionades amb distribucions o algorismes.
+
+#### 1. **Objecte de la prova**
+   - **Classes provades**:
+     - Totes les classes del sistema
+   - **Casos d'Us**:
+     -Tots els del sistema
+   - **Integracio**:
+     - Es proven operacions combinades: gestio de llistes, creacio de connexions, generacio de distribucions i enviaments de missatges.
+
+#### 2. **Fitxers de dades necessaris**
+   - **Arxius requerits**: test1 i test2 del directori `inputs`.
+   - **Classes emmagatzemades**:
+     - Si el sistema escriu o llegeix dades, serien llistes de productes (`LlistaProductes`) i distribucions (`Distribucion`).
+
+#### 3. **Valors estudiats**
+   - Es proven els valors de joc1, joc2, joc3.
+   - **Caixa negra**:
+     - L'input inclou casos d'us especfics (e.g., addicio de productes, relacions amb pesos).
+     - Proves d'integracio, validant resultats visibles sense examinar implementacions internes.
+   - **Caixa blanca**:
+     - Validacio d'operacions especfiques: creacio de llistes, relacions entre productes i modificacions.
+
+#### 4. **Efectes estudiats**
+   - Funcionalitats:
+     - Registre i autenticacio d'usuaris (`user1`, amb credencials).
+     - Creacio i gestio de llistes de productes (`L1`, `L2`).
+     - Relacions i pesos entre productes (`p1 p3 0.6`).
+     - Generació de distribucio amb algorisme.
+     - Enviament de distribucions entre usuaris (`user1 i user2`).
+     - Verificacio de distribucions generades.
+
+#### 5. **Operativa**
+   - **Manual d'us**:
+     1. Registrar-se amb un usuari (`1 user1 user pswrd`).
+     2. Iniciar sessio (`2 user pswrd`).
+     ## en el menu principal
+     1. Crear Nova Llista de Productes
+     2. Gestionar Llistes de Productes
+     3. Generar Distribució
+     4. Gestionar Distribucions
+     5. Missatges Entre Ususaris
+   - **Comandes rellevants**:
+     - `1`: Creacio (productes, llistes).
+     - `2`: Modificacio o consulta (e.g., addicio a llistes).
+     - `3`: Establir relacions amb pesos entre productes.
+     - `4`: Generació de distribucio.
+     - `5`: Consultar resultats.
+     - `6`: Consultar resultats.
