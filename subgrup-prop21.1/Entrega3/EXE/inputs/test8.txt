@@ -1,0 +1,23 @@
+#Productos
+prodA prodB prodC prodD prodE prodF prodG prodH prodI prodJ prodK prodL prodM prodN prodO prodP prodQ prodR
+
+#Relaciones
+prodA prodD 45
+prodA prodF 0.8
+prodB prodC 0.7
+prodB prodE 0.3
+prodC prodG 0.9
+prodD prodH 0.5
+prodE prodI 0.4
+prodF prodJ 0.2
+prodG prodK 0.6
+prodH prodL 0.7
+prodI prodM 0.8
+prodJ prodN 0.3
+prodK prodO 0.9
+prodL prodP 0.4
+prodM prodQ 0.7
+prodN prodR 0.6
+prodO prodQ 0.5
+prodP prodR 0.9
+
